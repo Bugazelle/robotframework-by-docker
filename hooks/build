@@ -1,0 +1,8 @@
+#!/bin/bash
+docker build \
+    --build-arg CHROME_VERSION=$CHROME_VERSION \
+    --build-arg CHROMEDRIV_VERSION=$CHROMEDRIV_VERSION \
+    --build-arg FIREFOX_VERSION=$FIREFOX_VERSION \
+    --build-arg GECKO_VERSION=$GECKO_VERSION \
+    --build-arg PHANTOMJS_VERSION=$PHANTOMJS_VERSION \
+    -t $IMAGE_NAME .
